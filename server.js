@@ -29,7 +29,7 @@ app.post('/upload', async(req, res) => {
                 console.log(err)
             })
             console.log(uploadResult.url)
-            return res.status(200).json({photoUrl: uploadResult.url, name: req.body.name, category: req.body.category})
+            return res.status(200).json({photoUrl: uploadResult.url, name: req.body.name, category: req.body.category, time: Date.now()})
         }
     } catch (error) {
         console.log(error)

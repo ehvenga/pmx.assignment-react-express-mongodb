@@ -1,5 +1,11 @@
+:root {
+  --background: rgb(39, 39, 39);
+  --text-color: white;
+}
+
 body {
   margin: 0;
   background-color: var(--background);
+  color: white;
   font-family: "Circular Std Book";
 }

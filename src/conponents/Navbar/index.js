@@ -1,10 +1,11 @@
 import { Link } from 'react-router-dom';
 import { PATHS } from '../../config';
+import './Navbar.scss'
 
 const Navbar = () => {
 
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-light mb-3 px-5">
+        <nav className="navbar navbar-expand-lg mb-3 px-5">
             <div className="container-fluid">
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler">
                 <span className="navbar-toggler-icon"></span>

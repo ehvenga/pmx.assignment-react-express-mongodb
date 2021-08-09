@@ -1,0 +1,45 @@
+.picture-card {
+    position: relative;
+    height: 10%;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    height: 200px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    object-fit: contain;
+}
+
+.details {
+    width: 400px;
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.picture-card:hover .image {
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+.picture-card:hover .details {
+    opacity: 1;
+}
+
+.words {
+    color: white;
+    font-size: 16px;
+}
+
+.card {
+    background-color: var(--background);
+    outline: none;
+    border: none;
+}

@@ -10,7 +10,6 @@ const dataAction = {
         })
         .then(res => {
             dispatch({type: dataTypes.fetch, payload: res.data})
-            console.log(res)
         })
         .catch(err => {
             setMessage(err.response.data.message)
